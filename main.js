@@ -1,90 +1,9 @@
-/* const Producto = function(sabor, pote, precio, stock){
-    this.sabor = sabor,
-    this.pote = pote,
-    this.precio = precio,
-    this.stock = stock
-}
-
-let producto1 = new Producto ("dulce de leche", 1/4, 1100, 10)
-let producto2 = new Producto ("crema americana", 1/2, 2000, 15)
-let producto3 = new Producto ("vainilla", 1/4, 1100, 9)
-let producto4 = new Producto ("frutilla", 1, 3150, 6)
-
-let lista = [producto1, producto2, producto3, producto4]
-
-function filtroProductos(){
-    if(confirm("¿Quiere buscar algún producto?") === false){
-        return;
-    }
-    let palabraClave = prompt("ingrese el nombre del producto buscado (dulce de leche, crema americana, vainilla o frutilla)").trim().toUpperCase()
-    let resultado = lista.filter((producto)=>producto.sabor.toUpperCase().includes(palabraClave))
-
-    if(resultado.length > 0){
-        console.table(resultado)
-    }else{
-        alert("no se encontró coincidencia con: " + palabraClave)
-        return
-    }
-}
-
-filtroProductos()
-
-function agregarProducto(){
-    
-    if(confirm("¿Quiere crear un producto?") === false){
-        return;
-    }
-
-    let sabor = prompt("ingrese el nombre del producto").trim().toLowerCase()
-    let pote = parseFloat(prompt("ingrese el peso del pote (0.25, 0.50, 1): "))
-    let precio = parseInt(prompt("ingrese el precio, que prefiera, del producto: "))
-    let stock = parseInt(prompt("ingrese el stock disponible: "))
-
-    const pesoValido = [0.25, 0.5, 1]
-
-    if(isNaN(pote) || isNaN(precio) || (isNaN(stock) || stock <= 0) || (sabor === "" || !isNaN(sabor))){
-        alert("Ingrese los valores válidos")
-        return;
-    }
-
-    if(pesoValido.includes(pote)){
-    }else{
-        alert("Ingrese el peso válido (0.25, 0.5, 1)")
-        return;
-    }
-
-    let producto = new Producto(sabor, pote, precio, stock)
-
-    if(lista.some((x)=>x.sabor === producto.sabor)){
-        alert("Este producto ya exite en la lista")
-        return;
-    }
-
-    lista.push(producto)
-
-    console.table(lista)
-
-}
-
-agregarProducto()
-
- */
-
-
 const Producto = function(sabor, pote, precio, stock){
     this.sabor = sabor,
     this.pote = pote,
     this.precio = precio,
     this.stock = stock
 }
-
-
-
-
-/* let producto1 = new Producto ("dulce de leche", 1/4, 1100, 10)
-let producto2 = new Producto ("crema americana", 1/2, 2000, 15)
-let producto3 = new Producto ("vainilla", 1/4, 1100, 9)
-let producto4 = new Producto ("frutilla", 1, 3150, 6) */
 
 fetch("productos.json")
     .then( (response) => response.json())
@@ -97,12 +16,6 @@ fetch("productos.json")
             productos.forEach((x) => lista.push(x))
         }
         
-        
-        
-        /* productos.forEach( (x) => lista.push((x))) */
-        /* const productos = data.producto;
-        
-        productos.forEach((P) => lista.push(P)) */
     })
 
     .catch((error) => {
@@ -115,7 +28,7 @@ fetch("productos.json")
     })
 
 
-let lista = [/* producto1, producto2, producto3, producto4 */]
+let lista = []
 
 
 
@@ -135,7 +48,7 @@ cerrarCont.classList.add("boton-cerrar")
 cerrarCont.innerHTML = `
 <button id="btnCerrar"><img src="https://svgsilh.com/svg_v2/1152114.svg" alt="boton-cerrar" id="img-cerrar"></button>
 `
-
+/*el button lo ingreso en las funciones filtrarProductos y mostrarProductos para que sólo sea visible y utilizable en esos momentos*/
 
 
 function filtrarProductos() {
