@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none; /* hace que no puedas seleccionar textos*/
+  text-align: justify;
+  font-family: "Gill Sans MT";
+}
+
+.cont-titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(180deg, rgb(199, 100, 199), rgb(217, 139, 224), rgba(183, 0, 255, 0.575));
+  height: 150px;
+  color: aliceblue;
+}
+.cont-titulo .titulo {
+  font-size: 100px;
+}
+.cont-titulo p {
+  font-size: 17px;
+}
+
+#filterCont {
+  height: 50px;
+  width: 100%;
+  margin: 0px auto 30px;
+  background-color: rgba(183, 0, 255, 0.575);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#filterCont #filtradoP {
+  font-size: 20px;
+  width: 60%;
+}
+#filterCont #btnFilter {
+  width: 40px;
+}
+#filterCont #filtradoP, #filterCont #btnFilter {
+  height: 30px;
+  margin: 0 5px;
+}
+
+#formProduct {
+  margin: 0 auto;
+  height: 250px;
+  width: 250px;
+  padding: 10px;
+  background-color: #5a205c;
+}
+#formProduct div {
+  display: flex;
+  flex-direction: column;
+}
+#formProduct div label, #formProduct div input {
+  margin-bottom: 5px;
+}
+#formProduct div label {
+  color: white;
+}
+#formProduct div input {
+  width: 90%;
+  margin: 0 auto;
+}
+#formProduct div .boton {
+  border: none;
+  color: white;
+  margin: 5px 0px;
+  background-color: #1d191f;
+  box-shadow: 0 0 10px #5d5c5e;
+  text-align: center;
+}
+
+#cardCont {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#cardCont .card {
+  height: 200px;
+  width: 250px;
+  margin: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+#cardCont .card h2 {
+  background-color: rgb(184, 184, 184);
+  text-align: center;
+}
+#cardCont .card p {
+  padding: 0px 5px;
+}
+
+.card {
+  transition: 0.5s;
+  box-shadow: 0 0 5px rgb(128, 128, 128);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.527);
+  transition: 1s;
+}
+
+.boton-cerrar {
+  display: flex;
+  justify-content: flex-end;
+  height: 50px;
+  width: 100%;
+}
+.boton-cerrar #btnCerrar {
+  display: block;
+  border: 0;
+}
+.boton-cerrar #btnCerrar #img-cerrar {
+  height: 100%;
+  border-radius: 100%;
+  transition: 0.5s;
+}
+
+#img-cerrar:hover {
+  box-shadow: 0 0 5px black;
+}
+
+.close {
+  display: none;
+}/*# sourceMappingURL=style.css.map */

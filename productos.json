@@ -1,0 +1,28 @@
+{
+    "productos": [
+      {
+        "sabor": "dulce de leche",
+        "pote": 0.25,
+        "precio": 1100,
+        "stock": 10
+      },
+      {
+        "sabor": "crema americana",
+        "pote": 0.5,
+        "precio": 2000,
+        "stock": 15
+      },
+      {
+        "sabor": "vainilla",
+        "pote": 0.25,
+        "precio": 1100,
+        "stock": 9
+      },
+      {
+        "sabor": "frutilla",
+        "pote": 1,
+        "precio": 3150,
+        "stock": 6
+      }
+    ]
+}

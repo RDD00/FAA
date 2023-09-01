@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="./SASS/style.css">
+
+</head>
+
+<body>
+    
+    <div class="cont-titulo">
+        <h1 class="titulo">FAA</h1>
+        <p>(filtrar, anidar y agregar productos)</p>
+    </div>
+
+    <div id="filterCont">
+        <input id="filtradoP" type="text">
+        <button id="btnFilter">Filtrar</button>
+    </div>
+    <div id="formProduct">
+        <div>
+            <label for="sabor">Sabor:</label>
+            <input type="text" id="inputSabor" name="sabor" class="inputAdjust">
+            
+            <label for="pote">Pote:</label>
+            <input type="number" id="inputPote" name="pote" class="inputAdjust">
+            
+            <label for="precio">Precio:</label>
+            <input type="number" id="inputPrecio" name="precio" class="inputAdjust">
+            
+            <label for="stock">Stock:</label>
+            <input type="number" id="inputStock" name="stock" class="inputAdjust">
+
+            <button id="addProduct" class="boton" type="submit">Añadir</button>
+            <button id="showProduct" class="boton close">Mostrar</button>
+        </div>
+    </div>
+
+
+    <!-- <div class="boton-cerrar">
+        <button id="btnCerrar"><img src="https://svgsilh.com/svg_v2/1152114.svg" alt="boton-cerrar" id="img-cerrar close"></button>
+    </div> -->
+
+    <ul id="cardCont"></ul>
+
+    <script src="main.js"></script>
+</body>
+</html>
